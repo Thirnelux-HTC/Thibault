@@ -1,0 +1,3 @@
+[submodule "Calcultrice"]
+	path = Calcultrice
+	url = https://github.com/ThibaultHTC/Calcultrice.git
