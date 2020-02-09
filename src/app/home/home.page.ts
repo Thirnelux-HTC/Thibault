@@ -21,28 +21,32 @@ export class HomePage {
     switch (this.op) {
       case "plus":
         log(this.part1 + "+" + this.part2)
+        this.result=this.part1 + "+" + this.part2+ "="
         log(this.result += this.part1 + this.part2)
         break;
       case "moins":
         log(this.part1 + "-" + this.part2)
+        this.result=this.part1 + "-" + this.part2+ "="
         log(this.result += this.part1 - this.part2)
         break;
       case "fois":
         log(this.part1 + "*" + this.part2)
+        this.result=this.part1 + "×" + this.part2+ "="
         log(this.result += this.part1 * this.part2)
         break;
       case "div":
         log(this.part1 + "/" + this.part2)
+        this.result=this.part1 + "÷" + this.part2+ "="
         log(this.result += this.part1 / this.part2)
         break;
       case "mod":
-        
+        this.result=this.part1 + "%" + this.part2+ "="
         this.result += this.part1 % this.part2
         
         log(this.result)
         break;
       default:
-        this.result += this.part2
+        this.result = this.result
         break;
     }
   }

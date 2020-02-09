@@ -1,117 +1,105 @@
 <ion-header>
   <ion-toolbar>
     <ion-title style="background-color: black;">
-      <h2><b style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">༄Thibault࿐</b></h2>
+      <h2><b style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+          <ion-icon name="logo-apple"></ion-icon>Apple Inc
+        </b></h2>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content style="background-color: black;">
-  <ion-card style="background-color: black; border: none;margin: 0px; height: 20cm;">
+  <ion-card style="background-color: black; border: none;margin: 0px;height: 18.72cm;">
     <h1>
-      <ion-input [(ngModel)]="result" placeholder="......."
-        style="text-align: right;font-size: 3cm; color: white; background-color: black;"></ion-input>
+      <ion-input [(ngModel)]="result" readonly="true"
+        style="text-align: right;font-size: 1.5cm; color: white; background-color: black;">
+      </ion-input>
     </h1>
     <ion-grid style="padding: 20px; border: none;">
       <ion-row>
         <ion-col size="3">
-          <ion-button (click)="clear()" color="medium" shape="round"
-            style="border-radius: 50%; height:58px ; width: 58px ;">
+          <ion-button (click)="clear()" color="medium" shape="round" class="gray_button">
             <h3>AC</h3>
           </ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button  (click)="sign()"color="medium" shape="round" style="border-radius: 50%; height:58px ; width: 58px ;">
+          <ion-button (click)="sign()" color="medium" shape="round" class="gray_button">
             <h3>+/-</h3>
           </ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button (click)="mod()" style="width: 1.7cm;" color="medium" shape="round"
-            style="border-radius: 50%; height:58px ; width: 58px ;">
+          <ion-button (click)="mod()" color="medium" shape="round" class="gray_button">
             <h3>%</h3>
           </ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button style="width: 1.7cm;" (click)="div()" shape="round"
-            style="border-radius: 50%; height:58px ; width: 58px ;" color="danger">
+          <ion-button style="width: 1.7cm;" (click)="div()" shape="round" class="orange_button" color="danger">
             <h3>÷</h3>
           </ion-button>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col size="3">
-          <ion-button style="width: 1.7cm;" (click)="click(7)" shape="round"
-            style="border-radius: 50%; height:58px ; width: 58px ;" color="dark">
+          <ion-button style="width: 1.7cm;" (click)="click(7)" shape="round" class="dark_button" color="dark">
             <h3>7</h3>
           </ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button style="width: 1.7cm;" (click)="click(8)" shape="round"
-            style="border-radius: 50%; height:58px ; width: 58px ;" color="dark">
+          <ion-button style="width: 1.7cm;" (click)="click(8)" shape="round" class="dark_button" color="dark">
             <h3>8</h3>
           </ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button style="width: 1.7cm;" (click)="click(9)" shape="round"
-            style="border-radius: 50%; height:58px ; width: 58px ;" color="dark">
+          <ion-button style="width: 1.7cm;" (click)="click(9)" shape="round" class="dark_button" color="dark">
             <h3>9</h3>
           </ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button style="width: 1.7cm;" (click)="multiply()" shape="round"
-            style="border-radius: 50%; height:58px ; width: 58px ; " color="danger">
+          <ion-button style="width: 1.7cm;" (click)="multiply()" shape="round" class="orange_button" color="danger">
             <h3>×</h3>
           </ion-button>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col size="3">
-          <ion-button style="width: 1.7cm;" (click)="click(4)" shape="round"
-            style="border-radius: 50%; height:58px ; width: 58px ;" color="dark">
+          <ion-button style="width: 1.7cm;" (click)="click(4)" shape="round" class="dark_button" color="dark">
             <h3>4</h3>
           </ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button style="width: 1.7cm;" (click)="click(5)" shape="round"
-            style="border-radius: 50%; height:58px ; width: 58px ;" color="dark">
+          <ion-button style="width: 1.7cm;" (click)="click(5)" shape="round" class="dark_button" color="dark">
             <h3>5</h3>
           </ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button style="width: 1.7cm;" (click)="click(6)" shape="round"
-            style="border-radius: 50%; height:58px ; width: 58px ;" color="dark">
+          <ion-button style="width: 1.7cm;" (click)="click(6)" shape="round" class="dark_button" color="dark">
             <h3>6</h3>
           </ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button style="width: 1.7cm;" (click)="retire()" shape="round"
-            style="border-radius: 50%; height:58px ; width: 58px ; " color="danger">
+          <ion-button style="width: 1.7cm;" (click)="retire()" shape="round" class="orange_button" color="danger">
             <h3>-</h3>
           </ion-button>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col size="3">
-          <ion-button style="width: 1.7cm;" (click)="click(1)" shape="round"
-            style="border-radius: 50%; height:58px ; width: 58px ;" color="dark">
+          <ion-button style="width: 1.7cm;" (click)="click(1)" shape="round" class="dark_button" color="dark">
             <h3>1</h3>
           </ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button style="width: 1.7cm;" (click)="click(2)" shape="round"
-            style="border-radius: 50%; height:58px ; width: 58px ;" color="dark">
+          <ion-button style="width: 1.7cm;" (click)="click(2)" shape="round" class="dark_button" color="dark">
             <h3>2</h3>
           </ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button style="width: 1.7cm;" (click)="click(3)" shape="round"
-            style="border-radius: 50%; height:58px ; width: 58px ;" color="dark">
+          <ion-button style="width: 1.7cm;" (click)="click(3)" shape="round" class="dark_button" color="dark">
             <h3>3</h3>
           </ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button style="width: 1.7cm;" (click)="add()" shape="round"
-            style="border-radius: 50%; height:58px ; width: 58px ;" color="danger">
+          <ion-button style="width: 1.7cm;" (click)="add()" shape="round" class="orange_button" color="danger">
             <h3>+</h3>
           </ion-button>
         </ion-col>
@@ -123,14 +111,12 @@
           </ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button shape="round" style="width: 1.7cm;" (click)="comma()"
-            style="border-radius: 50%; height:58px ; width: 58px ;" color="dark">
+          <ion-button shape="round" style="width: 1.7cm;" (click)="comma()" class="dark_button" color="dark">
             <h3>,</h3>
           </ion-button>
         </ion-col>
         <ion-col size="3">
-          <ion-button shape="round" style="width: 1.7cm;" (click)="submit()"
-            style="border-radius: 50%; height:58px ; width: 58px ;" color="danger">
+          <ion-button shape="round" style="width: 1.7cm;" (click)="submit()" class="orange_button" color="danger">
             <h3>=</h3>
           </ion-button>
         </ion-col>
@@ -138,3 +124,15 @@
     </ion-grid>
   </ion-card>
 </ion-content>
+<ion-tab-bar slot="icon-only" class="darkmode">
+  <ion-tab-button class="darkmode">
+    <ion-icon name="arrow-back"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button class="darkmode">
+    <ion-icon name="radio-button-off"></ion-icon>
+  </ion-tab-button>
+  <ion-tab-button class="darkmode">
+    <ion-icon name="square-outline"></ion-icon>
+  </ion-tab-button>
+</ion-tab-bar>
+
